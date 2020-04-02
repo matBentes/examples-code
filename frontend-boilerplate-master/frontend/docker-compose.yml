@@ -1,0 +1,12 @@
+version: '3'
+
+services:
+  frontend:
+    image: 'react_config:1.0'
+    container_name: 'frontend'
+    volumes:
+      - .:/usr/app
+    ports:
+      - 3000:3000
+    stdin_open: true
+    tty: true
